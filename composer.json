@@ -1,11 +1,4 @@
 {
-  "repositories": [
-  	{
-  		"type": "git",
-  		"url": "https://github.com/dleger/currencyConverter"
-  	}
-  ],
-  "minimum-stability":"dev",
   "name": "dleger/currency-converter",
   "type": "library",
   "description": "A simple script for converting currencies",
@@ -28,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "dleger\\currencyConverter\\": "src/"
+      "dleger\\currency_converter\\": "src/"
     }
   }
 }

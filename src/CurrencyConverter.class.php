@@ -8,7 +8,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-namespace dleger\currencyConverter;
+namespace dleger\currency_converter;
 
 use Gilbitron\Util\SimpleCache;
 
