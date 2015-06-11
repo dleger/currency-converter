@@ -1,4 +1,10 @@
 {
+  "repositories": [
+  	{
+  		"type": "git",
+  		"url": "https://github.com/dleger/currencyConverter"
+  	}
+  ],	
   "name": "dleger/currencyConverter",
   "type": "library",
   "description": "A simple script for converting currencies",
