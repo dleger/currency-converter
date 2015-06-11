@@ -6,7 +6,7 @@
   	}
   ],
   "minimum-stability":"dev",
-  "name": "dleger/currencyConverter",
+  "name": "dleger/currency-converter",
   "type": "library",
   "description": "A simple script for converting currencies",
   "keywords": [
@@ -14,7 +14,7 @@
     "currencies",
     "converter"
   ],
-  "homepage": "https://github.com/dleger/currencyConverter",
+  "homepage": "https://github.com/dleger/currency-converter",
   "license": "MIT",
   "authors": [
     {
