@@ -1,0 +1,29 @@
+{
+  "name": "dleger/currencyConverter",
+  "type": "library",
+  "description": "A simple script for converting currencies",
+  "keywords": [
+    "currency",
+    "currencies",
+    "converter"
+  ],
+  "homepage": "https://github.com/dleger/currencyConverter",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Denis Leger",
+      "email": "denis.leger.chaulet@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "gilbitron/php-simplecache": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "dleger\\currencyConverter\\": "src/"
+    }
+  }
+}
