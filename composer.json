@@ -1,5 +1,5 @@
 {
-  "name": "dleger/currency-converter",
+  "name": "dleger/currency_converter",
   "type": "library",
   "description": "A simple script for converting currencies",
   "keywords": [
@@ -7,7 +7,7 @@
     "currencies",
     "converter"
   ],
-  "homepage": "https://github.com/dleger/currency-converter",
+  "homepage": "https://github.com/dleger/currency_converter",
   "license": "MIT",
   "authors": [
     {
