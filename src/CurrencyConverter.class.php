@@ -7,7 +7,11 @@
  * Free to use under the MIT license
  * http://www.opensource.org/licenses/mit-license.php
  */
- 
+
+namespace dleger\currencyConverter;
+
+use Gilbitron\Util\SimpleCache;
+
 class CurrencyConverter
 {
     const URL_CURRENCIES = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml';
@@ -28,7 +32,7 @@ class CurrencyConverter
         // ********************************************************
         $this->cache_presence = $cache_switch;
         
-        $this->cache = new Gilbitron\Util\SimpleCache();
+        $this->cache = new SimpleCache();
         $this->cache->cache_path = self::URL_BASE_CACHE . '/' . $cache_location;
         $this->cache->cache_time = $cache_time;
         
@@ -37,16 +41,16 @@ class CurrencyConverter
             $data = $this->cache->get_cache('XMLCurrenciesTree');
             
             if ($data) {
-                $this->table_currencies = new SimpleXMLElement($data);
+                $this->table_currencies = new \SimpleXMLElement($data);
             } else {
                 $this->content_currencies_from_url = file_get_contents(self::URL_CURRENCIES);
-                $this->table_currencies = new SimpleXMLElement($this->content_currencies_from_url);
+                $this->table_currencies = new \SimpleXMLElement($this->content_currencies_from_url);
                 
                 $this->cache->set_cache('XMLCurrenciesTree', $this->content_currencies_from_url);
             }
         } else {
             $this->content_currencies_from_url = file_get_contents(self::URL_CURRENCIES);
-            $this->table_currencies = new SimpleXMLElement($this->content_currencies_from_url);
+            $this->table_currencies = new \SimpleXMLElement($this->content_currencies_from_url);
         }
     }
     
