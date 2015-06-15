@@ -28,6 +28,6 @@ replace:
 by:
 
     <?php
-    $conversion = new currency_converter(TRUE, 'your/cache/folder', 3600); // 3600 is the expirary time
+    $conversion = new currency_converter(TRUE, 'your/cache/folder', 3600); // 3600 is the expiry time
     ?>
 
