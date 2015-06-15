@@ -12,7 +12,7 @@ namespace dleger\currency_converter;
 
 use Gilbitron\Util\SimpleCache;
 
-class CurrencyConverter
+class currency_converter
 {
     const URL_CURRENCIES = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml';
     const URL_BASE_CACHE = '/var/www/html';
